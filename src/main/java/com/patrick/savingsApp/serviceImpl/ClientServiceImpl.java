@@ -22,14 +22,8 @@ public class ClientServiceImpl implements ClientService {
     }
 
     @Override
-    public boolean save(Client client) {
-
-        try {
-            repo.save(client);
-        }catch (Exception e){
-            // exception not save
-        }
-        return false;
+    public Client save(Client client) {
+    return repo.save(client);
     }
 
     @Override

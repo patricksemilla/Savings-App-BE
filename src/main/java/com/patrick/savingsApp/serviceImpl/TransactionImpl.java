@@ -24,8 +24,8 @@ public class TransactionImpl implements TransactionService {
     }
 
     @Override
-    public boolean save(Transaction transaction) {
-        return false;
+    public Transaction save(Transaction transaction) {
+        return repo.save(transaction);
     }
 
     @Override

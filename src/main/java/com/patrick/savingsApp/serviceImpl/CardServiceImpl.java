@@ -22,15 +22,10 @@ public class CardServiceImpl implements CardService {
     }
 
     @Override
-    public boolean save(Card card) {
-
-        try {
-            repo.save(card);
-        }catch (Exception e){
-            // exception not save
-        }
-        return false;
+    public Card save(Card card) {
+        return repo.save(card);
     }
+
 
     @Override
     public Card findById(long id) {

@@ -27,5 +27,4 @@ public class Card implements Serializable {
     @Column(name = "card_number")
     private int cartNumber;
 
-
 }

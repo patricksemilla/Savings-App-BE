@@ -8,7 +8,7 @@ import java.util.List;
 @Service
 public interface AccountService {
 
-    boolean save(Account account);
+    Account save(Account account);
     Account findById(long id);
     Account deleteById(long id);
     List<Account> data();

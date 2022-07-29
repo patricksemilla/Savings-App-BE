@@ -23,8 +23,8 @@ public class AccountServiceImpl implements AccountService {
     }
 
     @Override
-    public boolean save(Account account) {
-        return false;
+    public Account save(Account account) {
+        return repo.save(account);
     }
 
     @Override

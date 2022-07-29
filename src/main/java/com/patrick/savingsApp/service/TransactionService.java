@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 @Service
 public interface TransactionService {
-    boolean save(Transaction transaction);
+    Transaction save(Transaction transaction);
 
     Transaction findById(long id);
 
